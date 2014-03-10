@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListExpand</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="image_desc"></string>
+    <string name="name">Expand Demo</string>
+    <string name="ver">版本: v1.0.0</string>
+    <string name="size">大小: 13MB</string>
+    <string name="mgr">管理</string>
+    <string name="open">打开</string>
+    <string name="details">查看详情</string>
+    <string name="warning">举报</string>
+</resources>

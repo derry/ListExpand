@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip">
+    
+    <RelativeLayout 
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView 
+            android:id="@+id/ivIcon"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_desc"/>
+        
+        <LinearLayout 
+            android:id="@+id/appInfo"
+            android:layout_toRightOf="@id/ivIcon"
+            android:layout_marginLeft="5dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+            <TextView 
+                android:id="@+id/tvVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ver"
+                android:textColor="#666666"
+                android:textSize="13sp"/>
+            <TextView 
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size"
+                android:textColor="#666666"
+                android:textSize="13sp"/>
+            
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/btnClick"
+            android:focusable="false"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mgr"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_area">
+
+        <Button 
+            android:id="@+id/btnOpen"
+            android:focusable="false"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="6dip"
+            android:text="@string/open"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <Button 
+            android:id="@+id/btnView"
+            android:focusable="false"
+            android:layout_toRightOf="@id/btnOpen"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:text="@string/details"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        
+        <Button 
+            android:id="@+id/btnWarning"
+            android:focusable="false"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dip"
+            android:text="@string/warning"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>
